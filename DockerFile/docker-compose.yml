@@ -1,0 +1,37 @@
+services:
+#  buildpackdemo:
+#    image: "shajahanvzm/buildpackdemo:v1"
+#    container_name: "buildpackdemo-ms"
+#    ports:
+#      - "9010:9010"
+#    deploy:
+#      resources:
+#        limits:
+#          memory: 700m
+#    networks:
+#     - ms-playground
+  jibdemo:
+    image: "shajahanvzm/jibdemo:v1"
+    container_name: "jibdemo-ms"
+    ports:
+      - "9020:9020"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ms-playground
+  dbcheckinginms:
+    image: "shajahanvzm/dbcheckinginms:v1"
+    container_name: "dbcheckingin-ms"
+    ports:
+      - "9030:9030"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - ms-playground
+networks:
+  ms-playground:
+    driver: bridge
