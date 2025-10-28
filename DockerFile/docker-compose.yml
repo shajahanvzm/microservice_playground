@@ -1,15 +1,15 @@
 services:
-#  buildpackdemo:
-#    image: "shajahanvzm/buildpackdemo:v1"
-#    container_name: "buildpackdemo-ms"
-#    ports:
-#      - "9010:9010"
-#    deploy:
-#      resources:
-#        limits:
-#          memory: 700m
-#    networks:
-#     - ms-playground
+  buildpackdemo:
+    image: "shajahanvzm/buildpackdemo:v1"
+    container_name: "buildpackdemo-ms"
+    ports:
+      - "9010:9010"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+     - ms-playground
   jibdemo:
     image: "shajahanvzm/jibdemo:v1"
     container_name: "jibdemo-ms"
