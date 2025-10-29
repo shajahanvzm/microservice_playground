@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: "jibdemo"
+#  config:
+#    import:
+#      - "application-qa.yml.bkp"
+#      - "application-prod.yml.bkp"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+server:
+  port: 9020
+
+#jibinfo:
+#  message : "Welcome to Microservice Playgraound Google Jib API"
+#  contactDetails:
+#    name : "Shajahan P"
+#    email: "shajahanvzm@gmail.com"
+#  onCallSupport:
+#    - (4444) 444404-444
+#    - (555) 5353 - 3434

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: BuildPackDemo
+
+server:
+  port: 9010
+
+
+buildpacks:
+  message : "Welcome to Microservice Playgraound BuildPack API"
+  contactDetails:
+    name : "Shajahan P"
+    email: "shajahanvzm@gmail.com"
+  onCallSupport:
+    - (4444) 444404-444
+    - (555) 5353 - 3434

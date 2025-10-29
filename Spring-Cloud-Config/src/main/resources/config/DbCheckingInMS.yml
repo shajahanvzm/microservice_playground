@@ -1,7 +1,4 @@
 spring:
-  application:
-   name: DbCheckingInMS
-
 #  datasource:
 #    url: jdbc:mysql://localhost:3306/testdb?useSSL=false&serverTimezone=UTC
 #    driverClassName: com.mysql.cj.jdbc.Driver
@@ -13,6 +10,8 @@ spring:
     username: sa
     password:
     driver-class-name: org.h2.Driver
+
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -28,12 +27,15 @@ spring:
       path: /h2-console
       settings:
         web-allow-others: true
-#  config:
-#    import:
-#      - "application-qa.yml.bkp"
-#      - "application-prod.yml.bkp"
-  config:
-    import: "optional:configserver:http://localhost:8071/"
 
 server:
   port: 9030
+
+dbcheckinfo:
+  message : "Welcome to Microservice Playgraound DbCheck-MS API"
+  contactDetails:
+    name : "Shajahan P"
+    email: "shajahanvzm@gmail.com"
+  onCallSupport:
+    - (4444) 444404-444
+    - (555) 5353 - 3434

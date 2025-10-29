@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: jibdemo
+  profile:
+    active: "prod"
+
+server:
+  port: 9020
+
+jibinfo:
+  message : "Welcome to Microservice Playgraound Google Jib API"
+  contactDetails:
+    name : "Shajahan P"
+    email: "shajahanvzm@gmail.com"
+  onCallSupport:
+    - (4444) 444404-444
+    - (555) 5353 - 3434
